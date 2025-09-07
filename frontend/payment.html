@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KisanChikitsa – Payment</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ✅ Background -->
+  <div class="fixed inset-0 -z-10 bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]"></div>
+
+</head>
+<body class="bg-slate-950 text-white min-h-screen flex flex-col items-center justify-start p-6">
+
+ <!-- ✅ Navigation -->
+  <nav class="w-full flex justify-end px-8 py-4">
+    <ul class="flex space-x-5 text-sm font-medium text-white">
+      <li><a href="index.html" class="hover:text-green-400 transition">Home</a></li>
+      <li><a href="signin.html" class="hover:text-green-400 transition">Diagnose</a></li>
+      <li><a href="scheme.html" class="hover:text-green-400 transition">Schemes</a></li>
+       <li><a href="subscription.html" class="hover:text-green-400 transition">Chats</a></li>
+      <li><a href="community.html" class="hover:text-green-400 transition">Community</a></li>
+      <li><a href="about.html" class="hover:text-green-400 transition">About</a></li>
+    </ul>
+  </nav>
+  <!-- ✅ Payment Title -->
+  <h2 class="text-3xl font-bold text-green-300 mb-8">💳 Secure Payment</h2>
+
+  <!-- ✅ Payment Form -->
+  <section class="w-full max-w-md bg-white/10 border border-white/20 rounded-2xl p-8 text-left">
+    <form id="payment-form">
+      <!-- Name -->
+      <label class="block mb-4">
+        <span class="text-gray-200">Full Name</span>
+        <input type="text" class="w-full mt-2 p-3 rounded-lg bg-slate-800 text-white" required>
+      </label>
+
+      <!-- Email -->
+      <label class="block mb-4">
+        <span class="text-gray-200">Email Address</span>
+        <input type="email" class="w-full mt-2 p-3 rounded-lg bg-slate-800 text-white" required>
+      </label>
+
+      <!-- Card Number -->
+      <label class="block mb-4">
+        <span class="text-gray-200">Card Number</span>
+        <input type="text" maxlength="16" class="w-full mt-2 p-3 rounded-lg bg-slate-800 text-white" required>
+      </label>
+
+      <!-- Expiry & CVV -->
+      <div class="flex space-x-4 mb-4">
+        <label class="flex-1">
+          <span class="text-gray-200">Expiry (MM/YY)</span>
+          <input type="text" maxlength="5" class="w-full mt-2 p-3 rounded-lg bg-slate-800 text-white" required>
+        </label>
+        <label class="flex-1">
+          <span class="text-gray-200">CVV</span>
+          <input type="password" maxlength="3" class="w-full mt-2 p-3 rounded-lg bg-slate-800 text-white" required>
+        </label>
+      </div>
+
+      <!-- Pay Button -->
+      <button type="submit" class="w-full py-3 mt-2 bg-green-500 text-black font-bold rounded-xl">
+        Pay ₹20
+      </button>
+    </form>
+  </section>
+
+  <!-- ✅ Status -->
+  <p id="payment-status" class="mt-6 text-lg text-cyan-300 font-mono"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
