@@ -41,7 +41,7 @@ ROOT_URLCONF = 'kisan_chikitsa.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS':  [os.path.join(BASE_DIR, 'templates')],
+        'DIRS':  [os.path.join(BASE_DIR, 'templates'), os.path.join(BASE_DIR.parent, 'frontend')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -92,15 +92,9 @@ STATIC_URL = '/static/'
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = Path(__file__).resolve().parent.parent   # ✅ keep this one
 
-STATIC_URL = '/static/'
-
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),   # ✅ this points to your /static folder
-]
-# Static files
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "static"),   # backend static files
+    os.path.join(BASE_DIR.parent, "frontend"),  # frontend static assets and templates
 ]
 
 # Media files (for uploaded images)

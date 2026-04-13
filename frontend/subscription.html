@@ -5,22 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KisanChikitsa – Subscription</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
-
-  <div class="fixed inset-0 -z-10 bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]"></div>
-
+  <link rel="stylesheet" href="/static/style.css">
 </head>
 <body class="bg-slate-950 text-white min-h-screen flex flex-col items-center justify-start p-6">
+  <div class="fixed inset-0 -z-10 bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]"></div>
 
   <!-- ✅ Navigation -->
   <nav class="w-full flex justify-end px-8 py-4">
     <ul class="flex space-x-5 text-sm font-medium text-white">
-      <li><a href="index.html" class="hover:text-green-400 transition">Home</a></li>
-      <li><a href="signin.html" class="hover:text-green-400 transition">Diagnose</a></li>
-      <li><a href="scheme.html" class="hover:text-green-400 transition">Schemes</a></li>
-       <li><a href="subscription.html" class="hover:text-green-400 transition">Chats</a></li>
-      <li><a href="community.html" class="hover:text-green-400 transition">Community</a></li>
-      <li><a href="about.html" class="hover:text-green-400 transition">About</a></li>
+      <li><a href="/" class="hover:text-green-400 transition">Home</a></li>
+      <li><a href="/diagnose/" class="hover:text-green-400 transition">Diagnose</a></li>
+      <li><a href="/scheme/" class="hover:text-green-400 transition">Schemes</a></li>
+      <li><a href="/subscription/" class="hover:text-green-400 transition">Chats</a></li>
+      <li><a href="/community/" class="hover:text-green-400 transition">Community</a></li>
+      <li><a href="/about/" class="hover:text-green-400 transition">About</a></li>
+      <li><a href="/signin/" class="hover:text-green-400 transition">Sign In</a></li>
+      <li><a href="/signup/" class="hover:text-green-400 transition">Sign Up</a></li>
     </ul>
   </nav>
 
@@ -33,7 +33,7 @@
       <h3 class="text-xl font-semibold text-green-400 mb-2">🌱 Regular Plan</h3>
       <p class="text-sm text-gray-300 mb-4">Access Ayurvedic wellness updates and tips.</p>
       <p class="text-2xl font-bold text-green-300 mb-4">₹20/month</p>
-      <a href="payment.html">
+      <a href="/payment/">
         <button class="px-6 py-2 bg-green-500 text-black font-bold rounded-xl">Subscribe</button>
       </a>
     </div>
@@ -51,6 +51,6 @@
     </ul>
   </footer>
 
-  <script src="subscription_script.js"></script>
+  <script src="/static/subscription_script.js"></script>
 </body>
 </html>

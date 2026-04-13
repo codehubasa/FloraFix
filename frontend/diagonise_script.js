@@ -16,30 +16,47 @@ plantInput.addEventListener("change", function() {
   }
 });
 
-// Fake diagnosis with animated popup effect
-diagnoseBtn.addEventListener("click", () => {
-  if (previewImg.src === "") {
+// Real diagnosis API call
+diagnoseBtn.addEventListener("click", async () => {
+  const file = plantInput.files[0];
+  if (!file) {
     resultText.textContent = "⚠️ Please upload an image first.";
     return;
   }
 
-  // Random diagnosis result
-  const diagnoses = [
-    "✅ Your plant looks healthy! Keep it hydrated 🌿",
-    "⚠️ Yellow spots detected - possible nutrient deficiency 🌱",
-    "🛑 Signs of fungal infection detected, take action soon 🍂",
-    "💧 Plant may be underwatered, increase watering frequency."
-  ];
-  
-  const randomResult = diagnoses[Math.floor(Math.random() * diagnoses.length)];
-  
-  resultText.textContent = randomResult;
-  resultText.classList.add("pop-result");
+  // Show loading state
+  resultText.textContent = "⏳ Analyzing image...";
+  diagnoseBtn.disabled = true;
 
-  // Remove animation after it plays
-  setTimeout(() => {
-    resultText.classList.remove("pop-result");
-  }, 800);
+  const formData = new FormData();
+  formData.append("plantImage", file);
+
+  try {
+    const response = await fetch("http://127.0.0.1:8000/diagnose/api/predict/", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+    
+    if (response.ok && data.success) {
+      resultText.innerHTML = `<strong>Disease:</strong> ${data.result} <br><strong>Confidence:</strong> ${data.confidence}%`;
+    } else {
+      // The server successfully replied, but with an error (like model shape issue)
+      resultText.textContent = `❌ Server Error: ${data.error || "Unknown error occurred"}`;
+    }
+  } catch (error) {
+    console.error(error);
+    resultText.textContent = "❌ Failed to connect to server! Is your Django server running (python manage.py runserver)?";
+  } finally {
+    diagnoseBtn.disabled = false;
+    resultText.classList.add("pop-result");
+
+    // Remove animation after it plays
+    setTimeout(() => {
+      resultText.classList.remove("pop-result");
+    }, 800);
+  }
 });
 
 // Popup animation
