@@ -75,60 +75,15 @@ Machine Learning: VGG-19 (TensorFlow/Keras)
 
 📸 Screenshots
 
-<img width="1882" height="1021" alt="{13CCF7A5-9B0A-41BE-B38A-525D72909B17}" src="https://github.com/user-attachments/assets/2b638d7a-868f-49aa-8268-29b06c3adcd8" />
+<img width="1876" height="853" alt="Screenshot 2026-04-12 193103" src="https://github.com/user-attachments/assets/5e74b2ce-b252-48fc-8738-8e09035c83d0" />
+<img width="1866" height="862" alt="Screenshot 2026-04-12 193205" src="https://github.com/user-attachments/assets/18afc4e9-e0e4-422e-a2f1-79cea15251a1" />
+<img width="1908" height="845" alt="Screenshot 2026-04-12 193244" src="https://github.com/user-attachments/assets/17a22a07-0587-4dea-8e18-d20b29efc1ed" />
+<img width="1866" height="845" alt="Screenshot 2026-04-12 193323" src="https://github.com/user-attachments/assets/1fca193a-cabe-40a0-852d-e20c7ad94468" />
+<img width="1870" height="847" alt="Screenshot 2026-04-12 193418" src="https://github.com/user-attachments/assets/b5439948-4999-4aca-aac5-0c24bbf31938" />
+<img width="1861" height="826" alt="Screenshot 2026-04-12 212805" src="https://github.com/user-attachments/assets/939b6168-1a0d-4fcf-8755-d1fc8e4082b7" />
+<img width="1862" height="825" alt="Screenshot 2026-04-12 213114" src="https://github.com/user-attachments/assets/31eb90cc-f852-4b71-bc0b-bb3eaa91d0fc" />
 
-<img width="1886" height="974" alt="{CFB47F0D-E5D7-4996-8510-75E37007315B}" src="https://github.com/user-attachments/assets/8a0c282a-c3df-476d-91cd-b3db929a9ee4" />
+Author: Asmita Banerjee
 
-<img width="1904" height="898" alt="{FA0C76DA-3379-4EFE-91D7-F4840149DF33}" src="https://github.com/user-attachments/assets/0249fc47-d7e4-4429-b1b6-8ec35789fa47" />
-
-Accuracy and Loss graphs
-
-<img width="1408" height="1101" alt="image" src="https://github.com/user-attachments/assets/eb4debe0-b7ba-4624-b09c-7a7cf1af5a59" />
-
-<img width="1387" height="1101" alt="image" src="https://github.com/user-attachments/assets/87194deb-3dd1-4f7f-bcba-fcc808bcca1e" />
-
-<img width="1408" height="1101" alt="image" src="https://github.com/user-attachments/assets/40e9303c-91f2-4004-981b-b58e6185d0b9" />
-
-<img width="1387" height="1101" alt="image" src="https://github.com/user-attachments/assets/3fdc5fe9-528b-44de-b980-b04a9dd787b0" />
-
-<img width="1408" height="1101" alt="image" src="https://github.com/user-attachments/assets/4ab99a0a-ef02-4189-bdd3-6ad772e8a704" />
-
-<img width="1387" height="1101" alt="image" src="https://github.com/user-attachments/assets/80109ec8-001b-4174-91f9-e23a33a39798" />
-
-the matrix value of models:
- for Mobilenet-v2
- 
- Accuracy: 0.8333
- 
-Precision: 0.8889
-
-Recall: 0.8333
-
-F1-Score: 0.8222
-
-Specificity: 0.0000
-
-MCC: 0.7833
-
- for densenet-121
-
- <img width="204" height="145" alt="{842C148F-8657-411D-9DFB-42DE4233154E}" src="https://github.com/user-attachments/assets/8e0ff369-c0ee-4aa4-846b-4a8bf6aa2694" />
-
- for VGG-19
-
- <img width="207" height="151" alt="{CD3832E0-6A6E-4015-86F7-7164E3526F47}" src="https://github.com/user-attachments/assets/d26dd678-5797-4c37-b8a6-77c12b3ffb79" />
-
-
-
-
-
-
-👩‍💻 Team – Code Crackers
-
-Ankana Sadhukhan
-
-Asmita Banerjee
-
-Anindita Sen
-
-Isha Chakraborty
+Email ID: banerjeeasmita19@gmail.com
+Linkedin: https://www.linkedin.com/in/asmita-banerjee-874461364/
