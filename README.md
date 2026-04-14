@@ -69,24 +69,6 @@ Python – Core programming language
 TensorFlow / Keras – Deep learning framework
 Model: VGG-19 (Convolutional Neural Network for image classification)
 
-# Clone the repository
-git clone https://github.com/codehubasa/FloraFix.git
-
-# Navigate to project directory
-cd florafix
-
-# Create virtual environment
-python -m venv venv
-
-# Activate environment
-venv\Scripts\activate   # Windows
-source venv/bin/activate  # Mac/Linux
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run server
-python manage.py runserver
 
 📌 In short:
 Frontend: HTML, CSS, JavaScript
