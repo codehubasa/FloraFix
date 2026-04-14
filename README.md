@@ -1,72 +1,92 @@
 🌿 FloraFix – Diagnose, Treat, and Thrive
 
-FloraFix is an AI-powered plant disease detection platform that combines cutting-edge Artificial Intelligence with ancient Ayurvedic wisdom to revolutionize agriculture in India. It helps farmers and gardeners detect plant diseases early, provides remedies, and promotes sustainable farming practices.
+AI-powered plant disease detection platform integrating modern Artificial Intelligence with Ayurvedic wisdom for sustainable agriculture in India.
+
+📌 Overview
+
+FloraFix is an intelligent web-based platform designed to help farmers and plant enthusiasts detect plant diseases early, receive actionable remedies, and improve crop health efficiently.
+By combining Deep Learning (CNN models) with natural Ayurvedic treatments, FloraFix promotes eco-friendly and sustainable farming practices.
 
 🚀 Features
 
-🌱 AI Plant Disease Detection – Upload a photo and get instant results
+🌱 AI-Based Plant Disease Detection
+Upload plant images and receive instant diagnosis using deep learning models
+🩺 First Aid Kit Suggestions
+Immediate remedies for common plant health issues
+👨‍⚕️ Expert Consultation
+One-click access to agricultural experts
+🌿 Ayurvedic Treatment Recommendations
+Natural and sustainable plant care solutions
+📊 Smart Crop Optimization
+AI-driven insights to improve yield and productivity
+📰 Government Scheme Updates
+Stay updated with agricultural programs and policies
+🌦 Seasonal Care Tips & Alerts
+Timely reminders for effective crop management
+📡 Real-Time Monitoring
+Continuous tracking of plant health
 
-🩺 First Aid Kit Suggestions – Quick remedies for common plant issues
+🧑‍🌾 Target Users
 
-👨‍⚕️ One-Click Expert Help – Connect with agricultural experts
-
-🌿 Ayurvedic Medicine Recommendations – Natural solutions for plant health
-
-📊 Smart Optimisation – Yield improvement insights
-
-📰 Government Scheme Updates – Stay informed with the latest programs
-
-🌦 Seasonal Care Tips & Reminders – Timely alerts for healthy crops
-
-📡 Real-Time Monitoring – Track plant health continuously
-
-🧑‍🤝‍🧑 Who We Serve
-
-Farmers & Agricultural Workers – Early disease detection & yield optimization
-
-Home Gardeners & Plant Enthusiasts – Easy-to-use, affordable solutions
+Farmers & Agricultural Workers
+→ Early disease detection and yield optimization
+Home Gardeners & Plant Enthusiasts
+→ Easy-to-use and affordable plant care solutions
 
 🛠 How It Works
 
 Sign Up / Log In – Create a secure account
-
 Upload Plant Image – Quick cloud upload
-
 Image Analysis – AI model analyzes the photo
-
 Diagnosis Report – Disease name, severity, possible causes
-
 Guided Solutions – Fertilizers, pesticides, fungicides & Ayurvedic remedies
-
 Follow-up & Monitoring – Real-time alerts & chatbot support
 
 💡 Why FloraFix?
 
-✅ Integrated Approach – Modern AI + Ayurvedic wisdom
-✅ Holistic Well-being – Protects crops, soil, and human health
-✅ Community Focused – Designed for Indian farmers & gardeners
-✅ Empowerment – Knowledge and tools for sustainable practices
+✅ AI + Ayurveda Integration – Unique hybrid approach
+✅ Sustainable Agriculture Focus – Eco-friendly solutions
+✅ User-Centric Design – Built for Indian farmers & gardeners
+✅ Data-Driven Decisions – Accurate and reliable insights
 
-⚡ Tech Stack for Florafix
+⚡ Tech Stack
+
 🌐 Frontend
 
-HTML5 → Structure of web pages
-
-CSS3 → Styling and layout
-
-JavaScript (Vanilla JS) → Interactivity and client-side logic
+HTML5 – Structure
+CSS3 – Styling
+JavaScript (Vanilla JS) – Interactivity
 
 ⚙️ Backend
 
-Django (Python Framework) → Handles server-side logic, routes, and integrates ML model
+Django (Python Framework)
+Handles routing, authentication, and API integration
+Connects frontend with ML model
 
 🤖 Machine Learning
 
-Python → Core programming language
+Python – Core programming language
+TensorFlow / Keras – Deep learning framework
+Model: VGG-19 (Convolutional Neural Network for image classification)
 
-TensorFlow/Keras → Deep learning framework
+# Clone the repository
+git clone https://github.com/codehubasa/FloraFix.git
 
-Model Used: VGG-19 → Convolutional Neural Network (CNN) for plant disease detection
+# Navigate to project directory
+cd florafix
+
+# Create virtual environment
+python -m venv venv
+
+# Activate environment
+venv\Scripts\activate   # Windows
+source venv/bin/activate  # Mac/Linux
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run server
+python manage.py runserver
 
 📌 In short:
 Frontend: HTML, CSS, JavaScript
